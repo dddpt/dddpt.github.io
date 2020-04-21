@@ -12,4 +12,5 @@ printing takes the layout for xs screens, but having 2 projects card per row on 
 1) move projects section at end of CV
 2) add col-xs-X class to col-6 project cards and col-2 col-9 header
 3) remove "traditional CV below ..." line
-4) wkhtmltopdf path/to/index.html CV_wkhtmltopdf.pdf
+4) add some _style="margin-bottom:400px"_ to fix page breaks
+5) wkhtmltopdf path/to/index.html CV_wkhtmltopdf.pdf
