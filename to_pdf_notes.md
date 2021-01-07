@@ -13,3 +13,5 @@ printing takes the layout for xs screens, but having 2 projects card per row on 
 2) add col-xs-X class to col-6 project cards and col-2 col-9 header
 3) add some _style="margin-bottom:400px"_ to fix page breaks
 4) wkhtmltopdf index.html CV_wkhtmltopdf.pdf
+
+-> use online-convert.com with custom spacing...
