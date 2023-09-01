@@ -78,6 +78,26 @@
       <h1>Projects</h1>
 
 
+      <!-- HistoricalCityJSON-ninja  -->
+      <div class="col-6 col-xs-6xxx col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Historical CityJSON editor
+          </div>
+          <div class="panel-body">
+            <p>
+              In this project, we created a pipeline to create a documented 3d model from historical data.
+              I developed a web-interface to interact and edit the 3d model.
+              It allows to changes attributes (e.g. roof slope) and relaunch the procedural modelling of the city.
+              Presented at the <a src="https://infoscience.epfl.ch/record/304705" target="_blank">Digital Humanities 2023 conference</a>.
+              <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
+            </p>
+            <img src="./img/hcj.png" width="100%">
+          </div>
+        </div>
+      </div>
+
+
       <!-- linked HDS  -->
       <div class="col-6 col-xs-6xxx col-sm-6">
         <div class="panel panel-default">
@@ -89,29 +109,13 @@
           <div class="panel-body">
             <p>
               The <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland (HDS)</a> is a fascinating source on Swiss history.
-              Started in the 1980s as a paper-based encyclopedia, it lacked hyperlinks which are nowadays an essential part of our browsing experience.
+              Started in the 1980s as a paper-based encyclopedia, it was made without hyperlinks.<!--, which are today an expectation of our browsing experience.-->
               With this project, I scraped the HDS's 36'000 articles, used a Natural Language Processing (NLP) model to recognize entities in the text and add hyperlinks to their corresponding HDS and Wikipedia articles.
-              Now a standalone website, it offers a much more modern and intuitive exploration experience.
+              <!--Finally I brought it back online as a standalone website,--> The linked HDS now offers a much more modern and intuitive exploration experience.
             </p>
             <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/#/">
               <img src="./img/linked_hds.png" width="100%">
             </a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- HistoricalCityJSON-ninja  -->
-      <div class="col-6 col-xs-6xxx col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            Historical CityJSON editor
-          </div>
-          <div class="panel-body">
-            <p>
-              The Historical CityJSON editor is very cool
-            </p>
-            <img src="./img/hcj.png" width="100%">
           </div>
         </div>
       </div>
@@ -126,13 +130,39 @@
           <div class="panel-body">
             <p>
               With the parcels of Venice project, the DHLAB is digitizing historical cadastral data for Venice: maps of parcels with their accompanying metadata (owners, rent, etc)
-              As part of the Parcels of Venice project, I developed a plat
-              
-              form to explore spatio-temporal cadastral registries.
-              It allows to view parcels, their owner and metadata.
-              I furthermore supervised a student project to perform named entity recognition on the 23k entries of the 
+              As part of the Parcels of Venice project, I developed a platform to explore spatio-temporal cadastral registries.
+              It allows to view parcels, their owner and metadata. Moreover, I supervised a student to perform named entity recognition
+              on the 23'000 entries and disambiguate unique persons and link them to the parcels they own.
             </p>
             <img src="./img/venice1808.png" width="100%">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Swiss population through time  -->
+      <div class="col-6 col-xs-6xxx col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-heading-part1">
+              <a target="_blank" href="./swiss-population-time-machine/">
+              Population of Swiss municipalities over time
+              </a>
+            </div>
+            <div class="panel-heading-part2">
+              <a target="_blank" href="https://github.com/dddpt/swiss-population-time-machine"> <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="panel-body">
+            <p>
+              For this vizualisation, I extracted population data from texts of municipalities pages of the
+              <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland</a>.
+              Building upon the available data, I created a simple model to extrapolate the population of all municipalities until 1200.
+            </p>
+            <a target="_blank" href="./swiss-population-time-machine/">
+              <img src="./img/swiss_pop_through_time.png" width="100%">
+            </a>
           </div>
         </div>
       </div>
@@ -220,38 +250,10 @@
       </div>
 
 
-      <!-- Swiss population through time  -->
-      <div class="col-6 col-xs-6xxx col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="panel-heading-part1">
-              <a target="_blank" href="./swiss-population-time-machine/">
-              Population of Swiss municipalities over time
-              </a>
-            </div>
-            <div class="panel-heading-part2">
-              <a target="_blank" href="https://github.com/dddpt/swiss-population-time-machine"> <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="panel-body">
-            <p>
-              For this vizualisation, I extracted population data from texts of municipalities pages of the
-              <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland</a>.
-              Building upon the available data, I created a simple model to extrapolate the population of all municipalities until 1200.
-            </p>
-            <a target="_blank" href="./swiss-population-time-machine/">
-              <img src="./img/swiss_pop_through_time.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div>
-
-
 
 
       <!-- personal nutrition data-viz -->
-      <div class="col-6 col-xs-6xxx col-sm-6">
+      <!--div class="col-6 col-xs-6xxx col-sm-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <div class="panel-heading-part1">
@@ -279,11 +281,11 @@
             </a>
           </div>
         </div>
-      </div>
+      </div-->
 
 
       <!-- Travail de Master: inheritance inequality -->
-      <div class="col-6 col-xs-6xxx col-sm-6">
+      <!--div class="col-6 col-xs-6xxx col-sm-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
@@ -300,11 +302,11 @@
             </a>
           </div>
         </div>
-      </div>
+      </div-->
 
 
       <!-- SNA Politicians and boardrooms in Madagascar-->
-      <div class="col-6 col-xs-6xxx col-sm-6">
+      <!--div class="col-6 col-xs-6xxx col-sm-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
@@ -321,7 +323,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div-->
 
     </div>
 
@@ -348,7 +350,7 @@
             <td>03/21<br>current</td>
             <td>
             <strong>Doctoral student</strong>, <a target="_blank" href="https://dhlab.epfl.ch">Digital Humanities Laboratory (EPFL)</a><br>
-            <i class="fas fa-angle-double-right"></i> Exploring how to use the latest Natural language processing (NLP) advances to transform a text encyclopedia into a web-based geographical atlas.<br>
+            <!--i class="fas fa-angle-double-right"></i> Exploring how to use the latest Natural language processing (NLP) advances to transform a text encyclopedia into a web-based geographical atlas.<br-->
             <i class="fas fa-angle-double-right"></i> Extracted entities from the 36'000 articles of the <a target="_blank" href="hls-dhs-dss.ch/">Historical Dictionary of Switzerland (HDS)</a> and linked them to Wikipedia, resulting in a linked version of the HDS <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/">available here</a>.<br>
             <i class="fas fa-angle-double-right"></i> Developed a web-based GIS platform to explore historical records from the 1808 Napoleonic cadaster of Venice as well as the 1741 Catastici (tax-records)<br>
             <i class="fas fa-angle-double-right"></i> Developed a web-based platform to explore and modify 3D models of historical cities in the cityJSON format.<br>
@@ -377,7 +379,7 @@
             <strong>Research Engineer</strong>, <a target="_blank" href="https://people.unil.ch/kevinhuguenin">Information Security and Privacy Lab (UNIL)</a><br>
             <i class="fas fa-angle-double-right"></i> Developped a web-app to explore questions of kin genomic privacy: <a target="_blank" href="https://santeperso.unil.ch">santeperso.unil.ch</a>.<br>
             <i class="fas fa-angle-double-right"></i> Participated in the creation of the kin genomic privacy algorithm behind the app.<br>
-            <i class="fas fa-angle-double-right"></i> Did the data-analysis for the upcoming scientific paper presenting the algorithm and a user experiment of the tool.<br>
+            <i class="fas fa-angle-double-right"></i> Conducted a user survey and did the data-analysis for the accompanying scientific paper.<br>
             </td>
             <td>Lausanne, Switzerland</td>
           </tr> 
@@ -520,11 +522,11 @@
 
       <div class="col-lg-6">
         <h3 style="margin-bottom:5px">Technical</h3>
-        <strong>Web:</strong> ES6 Javascript, webpack, React, Node.js, Flask, Django, Sass<br>
-        <strong>Data-vizualisation:</strong> d3.js, Three.js, matplotlib<br>
-        <strong>Data-science:</strong> Jupyter, scikit-learn, pandas, R, Keras<br>
+        <strong>Web:</strong> Javascript, React.js, Vue.js, Flask, Node.js, Django, Sass<br>
+        <strong>Deployment:</strong> Docker, Kubernetes, AWS<!--, Mathematica, Matlab--><br>
         <strong>Programming:</strong> Python, Scala, Java, SQL, C/C++<br>
-        <strong>Other:</strong> Git, AWS, Mathematica, Matlab<br>
+        <strong>Data-vizualisation:</strong> d3.js, Three.js, matplotlib<br>
+        <strong>Data-science:</strong> Jupyter, PyTorch, scikit-learn, pandas, R, Keras<br>
       </div>
 
       <div class="col-lg-6">
@@ -568,16 +570,34 @@
         </thead>
         <tbody>
 
-          <!--tr>
+
+          <a src="https://infoscience.epfl.ch/record/304705" target="_blank"></a>.
+          <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
+        
+          <tr>
             <td width="70px"></td>
-            <td>2020</td>
+            <td>2023</td>
             <td>
-            <!-a target="_blank" href="https://sjes.springeropen.com/articles/10.1186/s41937-017-0012-9"-><strong>KGP Estimator: Bringing Kin Genomic Privacy to the People</strong>, (UNDER REVIEW) <!-/a-><br>
-            <i class="fas fa-angle-double-right"></i> We present a new online tool to raise awareness in the general public about the privacy risks of genomic data sharing.<br>
-            <i class="fas fa-angle-double-right"></i> We design an algorithm and web-app that enables users to draw their family trees and indicate which of their relatives’ genomes are known, and give a corresponding privacy score.<br>
-            <i class="fas fa-angle-double-right"></i> By analyzing the usage of our tool and surveying its users, we observe that most users find the privacy score worrisome, and that the large majority of them find KGP Estimator useful.<br>
+            <a target="_blank" href="https://infoscience.epfl.ch/record/304705">
+              <strong>From Automated Bootstrapping to Collaborative Editing: A Framework for 4D City Reconstruction</strong></a>,
+            <a target="_blank" href="https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show">
+                Digital Humanities 2023 Conference
+            </a><br>
+            <i class="fas fa-angle-double-right"></i> In this paper, we present a pipeline and platform to bootstrap 3d historical model of cities and continuously improve them in a versioned and documented manner.
+          </td>
+          </tr> 
+
+          <tr>
+            <td width="70px"></td>
+            <td>2022</td>
+            <td>
+            <a target="_blank" href="https://ieeexplore.ieee.org/document/9797355"><strong>KGP Meter: Communicating Kin Genomic Privacy to the Masses</strong>, 2022 IEEE 7th European Symposium on Security and Privacy (EuroS&P) </a><br>
+            <i class="fas fa-angle-double-right"></i> Direct-to-consumer genetic testing services such as 23andMe or AncestryDNA have already attracted 26 million customers.
+            These services raise privacy concerns, as some people share their genomic data publicly on platforms such as GEDmatch. 
+            Notably, sensitive information on health outcomes can be deduced not only on the tested person, but also on their close relatives.
+            In this paper, we present KGP Meter, a new online tool that provides means for raising awareness in the general public about the privacy risks of genomic data sharing.
             </td>
-          </tr> -->
+          </tr> 
 
           <tr>
             <td width="70px"></td>
@@ -587,6 +607,7 @@
             <i class="fas fa-angle-double-right"></i> We estimate the annual inheritance flows and shares of inherited wealth in Switzerland over a long span of historical data, in close analogy to the study for France done by <a target="_blank" href="https://academic.oup.com/qje/article-abstract/126/3/1071/1853329">Thomas Piketty (QJE 2011)</a>. Coauthor with Élodie Moreau and <a target="_blank" href="http://www.hec.unil.ch/mbrulhar/">Pr. Marius Brülhart</a>.
             </td>
           </tr> 
+
 
         </tbody>
       </table>
