@@ -15,3 +15,10 @@ printing takes the layout for xs screens, but having 2 projects card per row on 
 4) wkhtmltopdf index.html CV_wkhtmltopdf.pdf
 
 online-convert
+
+## ILovePDF 2023
+
+https://www.ilovepdf.com/html-to-pdf
+- "tablet view"
+- not "one long page"
+- margin "big"
