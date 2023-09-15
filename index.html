@@ -23,8 +23,7 @@
   <!-- Font-awesomize all this -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-
-
+  <link href="css/web.css" rel="stylesheet">
 
   <style>
   .logo{
@@ -74,546 +73,556 @@
     </div>
 
 
+    
 
-    <!-- Relevant experience -->
-    <div class="row">
-      <h1 id="relevant-experience">Relevant Experience</h1>
-      <table class="table table-striped" style="width:100%">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Year</th>
-            <th>Experience</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
+<div id="projects" class="row">
+
+  <h1>Projects</h1>
 
 
-          <!-- EPFL DHLAB PhD -->
-          <tr>
-            <td><img src="img/logo_epfl_new_transp.png" class="logo"></td>
-            <td>03/21<br>current</td>
+  <!-- HistoricalCityJSON-ninja  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Historical CityJSON editor
+      </div>
+      <div class="panel-body">
+        <p>
+          In this project, we created a pipeline to create a documented 3d model from historical data.
+          I developed a web-interface to interact and edit the 3d model.
+          It allows to changes attributes (e.g. roof slope) and relaunch the procedural modelling of the city.
+          Presented at the <a href="https://infoscience.epfl.ch/record/304705" target="_blank">Digital Humanities 2023 conference</a>.
+          <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
+        </p>
+        <img src="./img/hcj.png" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- linked HDS  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/">
+          The linked HDS
+          </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          The <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland (HDS)</a> is a fascinating source on Swiss history.
+          Started in the 1980s as a paper-based encyclopedia, it was made without hyperlinks.<!--, which are today an expectation of our browsing experience.-->
+          With this project, I scraped the HDS's 36'000 articles, used a Natural Language Processing (NLP) model to recognize entities in the text and add hyperlinks to their corresponding HDS and Wikipedia articles.
+          <!--Finally I brought it back online as a standalone website,--> The linked HDS now offers a much more modern and intuitive exploration experience.
+        </p>
+        <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/#/">
+          <img src="./img/linked_hds.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 1808 Venice cadaster  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          Historical Venetian Cadaster Explorer
+      </div>
+      <div class="panel-body">
+        <p>
+          With the parcels of Venice project, the DHLAB is digitizing historical cadastral data for Venice: maps of parcels with their accompanying metadata (owners, rent, etc)
+          As part of the Parcels of Venice project, I developed a platform to explore spatio-temporal cadastral registries.
+          It allows to view parcels, their owner and metadata. Moreover, I supervised a student to perform named entity recognition
+          on the 23'000 entries and disambiguate unique persons and link them to the parcels they own.
+        </p>
+        <img src="./img/venice1808.png" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Swiss population through time  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-part1">
+          <a target="_blank" href="./swiss-population-time-machine/">
+          Population of Swiss municipalities over time
+          </a>
+        </div>
+        <div class="panel-heading-part2">
+          <a target="_blank" href="https://github.com/dddpt/swiss-population-time-machine"> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>
+          For this vizualisation, I extracted population data from texts of municipalities pages of the
+          <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland</a>.
+          Building upon the available data, I created a simple model to extrapolate the population of all municipalities until 1200.
+        </p>
+        <a target="_blank" href="./swiss-population-time-machine/">
+          <img src="./img/swiss_pop_through_time.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ScanVan  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
+          ScanVan Project: explore cities in 3D
+          <!--/a-->
+      </div>
+      <div class="panel-body">
+        <p>
+          The ScanVan project at EPFL is exploring new ways to create digital 3D models of cities using innovative cameras and algorithms.
+          I developed a website to explore those 3D reconstructions, beginning with our first scan: the city of Sion.
+          <!--br/>Tech used: React, Node.js, Three.js, Potree, Leaflet-->
+        </p>
+        <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
+          <img src="./img/scanvan.png" width="100%">
+        <!--/a-->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Kin Genomic Privacy -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
+          Kin Genomic Privacy Estimator
+        </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. 
+          At the Information Security and Privacy Lab, I developed a website that allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
+          <!--br/>Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
+          <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
+          Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
+          <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to indicate which of your relatives had their genome tested, and estimates how much of your genomic information remains hidden.-->
+          <!--At the ISPLAB, I developed a website to raise awareness about the privacy risks of genomic data
+          sharing when using services such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. The website enables
+          users to draw their family trees and indicate which of their relatives’ genomes are known, and gives a corresponding genomic privacy score.-->
+        </p>
+        <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
+          <img src="./img/kgpmeter.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- JS Solar System  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-part1">
+          <a target="_blank" href="./solar-system/">
+            3D Solar System
+          </a>
+        </div>
+        <div class="panel-heading-part2">
+          <a target="_blank" href="https://github.com/dddpt/solar-system">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>
+          To get familiar with orbital mechanics, our solar system and <a target="_blank" href="https://threejs.org/">Three.js</a>, I am
+          having fun on this simple solar system animation. For now it uses descriptive Keplerian Orbits. It will soon be extended with proper Newtonian Mechanics, planets' moons data and nicer sprites (WIP).
+        </p>
+        <p>
+        </p>
+        <a target="_blank" href="./solar-system/">
+          <img src="./img/solar_system.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- personal nutrition data-viz -->
+  <!--div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-part1">
+          <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
+            Personal Nutrition Data-viz Dashboard
+          </a>
+        </div>
+        <div class="panel-heading-part2">
+          <a target="_blank" href="https://github.com/dddpt/daily-intakes-nutrition-dataviz-demo">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>
+          This proof-of-concept personal nutrition data-vizualisation is a demo built for a nutrition
+          research project where participants collect data on their food consumption. 
+          The interactive visualization allows participants to compare their nutrient intakes across food
+          classes with the rest of the population.
+        </p>
+        <p>
+        </p>
+        <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
+          <img src="./img/personal_nutrition_demo.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div-->
+
+
+  <!-- Travail de Master: inheritance inequality -->
+  <!--div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
+          Inheritance distribution in Switzerland
+        </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          For my Master thesis, I used long-run wealth distribution and mortality data to reconstruct the distribution of bequest from 1934 to 2013 in a selection of Swiss cantons. The resulting time series shows that the distribution of bequests is less unequal that it was 80 years ago thanks to the rise of the upper middle class. Supervised by Pr. <a target="_blank" href="http://www.hec.unil.ch/mbrulhar/">Marius Brülhart</a>. <br>
+          <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">[pdf report]</a>
+        </p>
+        <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
+          <img src="img/master_thesis_inh_evolution.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div-->
+
+
+  <!-- SNA Politicians and boardrooms in Madagascar-->
+  <!--div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
+          Politicians and boardrooms in Madagascar
+        </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          I scraped the whole Malagasy business registry to study the networks of boards and directors in important Malagasy companies using social network analysis. We find a high presence of political figures and state officials in boardrooms. Notably, Madagascar’s sitting president is among the three most central nodes of the directors network. Supervised by Pr. <a target="_blank" href="http://hec.unil.ch/people/mtomassini?dyn_lang=fr">Marco Tomassini</a>. 
+          <br><a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">[pdf report]</a>
+        </p>
+        <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
+          <img src="img/sna_madagascar2.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div-->
+
+</div>
+
+
+
+    
+
+<!-- Relevant experience -->
+<div  id="experience" class="row">
+  <h1 id="relevant-experience">Relevant Experience</h1>
+  <table class="table table-striped" style="width:100%">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Year</th>
+        <th>Experience</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+      <!-- EPFL DHLAB PhD -->
+      <tr>
+        <td><img src="img/logo_epfl_new_transp.png" class="logo"></td>
+        <td>03/21<br>current</td>
+        <td>
+        <strong>Doctoral student</strong>, <a target="_blank" href="https://dhlab.epfl.ch">Digital Humanities Laboratory (EPFL)</a><br>
+        <!--i class="fas fa-angle-double-right"></i> Exploring how to use the latest Natural language processing (NLP) advances to transform a text encyclopedia into a web-based geographical atlas.<br-->
+        <i class="fas fa-angle-double-right"></i> Extracted entities from the 36'000 articles of the <a target="_blank" href="hls-dhs-dss.ch/">Historical Dictionary of Switzerland (HDS)</a> and linked them to Wikipedia, resulting in a linked version of the HDS <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/">available here</a>.<br>
+        <i class="fas fa-angle-double-right"></i> Developed a web-based GIS platform to explore historical records from the 1808 Napoleonic cadaster of Venice as well as the 1741 Catastici (tax-records)<br>
+        <i class="fas fa-angle-double-right"></i> Developed a web-based platform to explore and modify 3D models of historical cities in the cityJSON format.<br>
+        </td>
+        <td>Lausanne, Switzerland</td>
+      </tr> 
+
+
+      <!-- EPFL DHLAB -->
+      <tr>
+        <td><img src="img/logo_epfl_new_transp.png" class="logo"></td>
+        <td>10/20<br>02/21</td>
+        <td>
+        <strong>Full-Stack Developer</strong>, <a target="_blank" href="https://dhlab.epfl.ch">Digital Humanities Laboratory (EPFL)</a><br>
+        <i class="fas fa-angle-double-right"></i> Developed a demonstration website to explore 3D pointcloud scans of cities, beginning with Sion in Switzerland: <a target="_blank" href="https://scanvan.dhlab.epfl.ch/">scanvan.dhlab.epfl.ch</a>.<br>
+        </td>
+        <td>Lausanne, Switzerland</td>
+      </tr> 
+
+
+      <!-- UNIL ISPLAB -->
+      <tr>
+        <td><img src="img/logo_unil.png" class="logo"></td>
+        <td>07/18<br>06/20</td>
+        <td>
+        <strong>Research Engineer</strong>, <a target="_blank" href="https://people.unil.ch/kevinhuguenin">Information Security and Privacy Lab (UNIL)</a><br>
+        <i class="fas fa-angle-double-right"></i> Developped a web-app to explore questions of kin genomic privacy: <a target="_blank" href="https://santeperso.unil.ch">santeperso.unil.ch</a>.<br>
+        <i class="fas fa-angle-double-right"></i> Participated in the creation of the kin genomic privacy algorithm behind the app.<br>
+        <i class="fas fa-angle-double-right"></i> Conducted a user survey and did the data-analysis for the accompanying scientific paper.<br>
+        </td>
+        <td>Lausanne, Switzerland</td>
+      </tr> 
+
+
+
+      <!-- OFS -->
+      <tr>
+        <td><img src="img/logo_ch.png" class="logo"></td>
+        <td>04/17<br>03/18</td>
+        <td>
+        <strong>Data-management intern</strong>, <a target="_blank" href="https://www.agvchapp.bfs.admin.ch/fr/home">Swiss Federal Statistical Office (SFSO)</a><br>
+        <i class="fas fa-angle-double-right"></i> Created historicized geographical metadata to handle municipalities and regional data through time, now available as a  <a target="_blank" href="https://www.agvchapp.bfs.admin.ch/fr/typologies/query">web-app</a>.<br>
+        <i class="fas fa-angle-double-right"></i> Developed software and processes for the reception and validation of new data.<br>
+        <i class="fas fa-angle-double-right"></i> Centralized unstructured excel regional data in a SQL database for my group.<br>
+        </td>
+        <td>Neuchâtel, Switzerland</td>
+      </tr> 
+
+
+
+      <!-- UNIFR India 
+      <tr>
+        <td><img src="img/logo_unifr.svg" class="logo"></td>
+        <td>10/17<br>12/17</td>
+        <td>
+        <strong>Data research assistant</strong>, <a target="_blank" href="https://unifr.ch">University of Fribourg</a><br>
+        <i class="fas fa-angle-double-right"></i> Participated in data-wrangling for research on development economics in the group of Pr. <a target="_blank" href="https://www3.unifr.ch/edhe/en/">Christelle Dumas</a><br>
+        
+        <i class="fas fa-angle-double-right"></i> Notably retrieved a 100'000+ entries database from a badly formatted 2'000 pages pdf file in Hindi.
+        </td>
+        <td>Fribourg, Switzerland</td>
+      </tr>-->
+
+      <!-- UniPoly -->
+      <tr>
+        <td><img src="img/logo_unipoly.jpg" class="logo"></td>
+        <td>11/16<br>06/16</td>
+        <td>
+        <strong>Treasurer and conference responsible</strong>, <a target="_blank" href="https://unipoly.epfl.ch">UniPoly, student association for sustainability </a><br>
+        <i class="fas fa-angle-double-right"></i> In addition to my role as treasurer for the 2015 comittee, I organised a recruitment campaign and prepared 7 conferences/debates on sustainability topics as well as a visit of the Gösgen nuclear plant.
+        </td>
+        <td>Lausanne, Switzerland</td>
+      </tr> 
+
+      <!--tr>
+        <td><img src="img/logo_kth.png" class="logo"></td>
+        <td>01/13<br>06/13</td>
+        <td>
+        <strong>Project leader</strong>, <a target="_blank" href="https://kth.se">Royal Institute of Technology (KTH)</a><br>
+        <i class="fas fa-angle-double-right"></i> We worked as a team of 7 students in developing a demonstration web-application to find classes at the KTH as a semester project.
+        </td>
+        <td>Stockholm, Sweden</td>
+      </tr> 
+
+      <tr>
+        <td><img src="img/logo_best.png" class="logo"></td>
+        <td>03/13<br>06/13</td>
+        <td>
+        <strong>Corporate Relations Responsible</strong>, <a target="_blank" href="https://best.eu.org">Board of European Students of Technology </a><br>
+        <i class="fas fa-angle-double-right"></i> Organised the fund-raising for a ten day intensive engineering course. Established contacts for a successful partnership between the international association and KTH.
+        </td>
+        <td>Stockholm, Sweden</td>
+      </tr--> 
+
+
+    </tbody>
+  </table>
+</div>
+
+
+    
+
+<!-- Education -->
+<div id="education" class="row" >
+  <h1>Education</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Year</th>
+        <th>Degree</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+            <td><img src="img/logo_coursera.svg" class="logo"></td>
+            <td>2017</td>
             <td>
-            <strong>Doctoral student</strong>, <a target="_blank" href="https://dhlab.epfl.ch">Digital Humanities Laboratory (EPFL)</a><br>
-            <!--i class="fas fa-angle-double-right"></i> Exploring how to use the latest Natural language processing (NLP) advances to transform a text encyclopedia into a web-based geographical atlas.<br-->
-            <i class="fas fa-angle-double-right"></i> Extracted entities from the 36'000 articles of the <a target="_blank" href="hls-dhs-dss.ch/">Historical Dictionary of Switzerland (HDS)</a> and linked them to Wikipedia, resulting in a linked version of the HDS <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/">available here</a>.<br>
-            <i class="fas fa-angle-double-right"></i> Developed a web-based GIS platform to explore historical records from the 1808 Napoleonic cadaster of Venice as well as the 1741 Catastici (tax-records)<br>
-            <i class="fas fa-angle-double-right"></i> Developed a web-based platform to explore and modify 3D models of historical cities in the cityJSON format.<br>
+            <strong>Neural Networks for Machine Learning</strong>, <a target="_blank" href="https://www.coursera.org">coursera.org </a><br>
+            <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/EQ2NGU6VDVXH">Certificate</a>
             </td>
             <td>Lausanne, Switzerland</td>
           </tr> 
 
-
-          <!-- EPFL DHLAB -->
-          <tr>
-            <td><img src="img/logo_epfl_new_transp.png" class="logo"></td>
-            <td>10/20<br>02/21</td>
-            <td>
-            <strong>Full-Stack Developer</strong>, <a target="_blank" href="https://dhlab.epfl.ch">Digital Humanities Laboratory (EPFL)</a><br>
-            <i class="fas fa-angle-double-right"></i> Developed a demonstration website to explore 3D pointcloud scans of cities, beginning with Sion in Switzerland: <a target="_blank" href="https://scanvan.dhlab.epfl.ch/">scanvan.dhlab.epfl.ch</a>.<br>
-            </td>
-            <td>Lausanne, Switzerland</td>
-          </tr> 
-
-
-          <!-- UNIL ISPLAB -->
           <tr>
             <td><img src="img/logo_unil.png" class="logo"></td>
-            <td>07/18<br>06/20</td>
+            <td>2013<br>2016</td>
             <td>
-            <strong>Research Engineer</strong>, <a target="_blank" href="https://people.unil.ch/kevinhuguenin">Information Security and Privacy Lab (UNIL)</a><br>
-            <i class="fas fa-angle-double-right"></i> Developped a web-app to explore questions of kin genomic privacy: <a target="_blank" href="https://santeperso.unil.ch">santeperso.unil.ch</a>.<br>
-            <i class="fas fa-angle-double-right"></i> Participated in the creation of the kin genomic privacy algorithm behind the app.<br>
-            <i class="fas fa-angle-double-right"></i> Conducted a user survey and did the data-analysis for the accompanying scientific paper.<br>
+            <strong>Master in Economics</strong>, <a target="_blank" href="https://unil.ch">University of Lausanne (UNIL) </a><br>
+            <i class="fas fa-angle-double-right"></i> GPA Master: 5.26/6<br>
+            <i class="fas fa-angle-double-right"></i> Relevant courses: Applied econometrics, Macroeconometrics, Behavorial economics, Dynamic macroeconomic models.
             </td>
             <td>Lausanne, Switzerland</td>
           </tr> 
 
-
-
-          <!-- OFS -->
           <tr>
-            <td><img src="img/logo_ch.png" class="logo"></td>
-            <td>04/17<br>03/18</td>
+            <td><img src="img/logo_epfl_new_transp.png" class="logo"></td>
+            <td>2009<br>2013</td>
             <td>
-            <strong>Data-management intern</strong>, <a target="_blank" href="https://www.agvchapp.bfs.admin.ch/fr/home">Swiss Federal Statistical Office (SFSO)</a><br>
-            <i class="fas fa-angle-double-right"></i> Created historicized geographical metadata to handle municipalities and regional data through time, now available as a  <a target="_blank" href="https://www.agvchapp.bfs.admin.ch/fr/typologies/query">web-app</a>.<br>
-            <i class="fas fa-angle-double-right"></i> Developed software and processes for the reception and validation of new data.<br>
-            <i class="fas fa-angle-double-right"></i> Centralized unstructured excel regional data in a SQL database for my group.<br>
-            </td>
-            <td>Neuchâtel, Switzerland</td>
-          </tr> 
-
-
-
-          <!-- UNIFR India 
-          <tr>
-            <td><img src="img/logo_unifr.svg" class="logo"></td>
-            <td>10/17<br>12/17</td>
-            <td>
-            <strong>Data research assistant</strong>, <a target="_blank" href="https://unifr.ch">University of Fribourg</a><br>
-            <i class="fas fa-angle-double-right"></i> Participated in data-wrangling for research on development economics in the group of Pr. <a target="_blank" href="https://www3.unifr.ch/edhe/en/">Christelle Dumas</a><br>
-            
-            <i class="fas fa-angle-double-right"></i> Notably retrieved a 100'000+ entries database from a badly formatted 2'000 pages pdf file in Hindi.
-            </td>
-            <td>Fribourg, Switzerland</td>
-          </tr>-->
-
-          <!-- UniPoly -->
-          <tr>
-            <td><img src="img/logo_unipoly.jpg" class="logo"></td>
-            <td>11/16<br>06/16</td>
-            <td>
-            <strong>Treasurer and conference responsible</strong>, <a target="_blank" href="https://unipoly.epfl.ch">UniPoly, student association for sustainability </a><br>
-            <i class="fas fa-angle-double-right"></i> In addition to my role as treasurer for the 2015 comittee, I organised a recruitment campaign and prepared 7 conferences/debates on sustainability topics as well as a visit of the Gösgen nuclear plant.
+            <strong>Bachelor in Computer Science</strong>, <a target="_blank" href="https://epfl.ch">EPFL</a><br>
+            <i class="fas fa-angle-double-right"></i> Third year exchange at the <a target="_blank" href="https://kth.se">Royal Institute of Technology (KTH)</a> in Stockholm.<br>
+            <i class="fas fa-angle-double-right"></i> Relevant courses: Software Engineering, Artificial intelligence, Time Series Analysis.
             </td>
             <td>Lausanne, Switzerland</td>
           </tr> 
+    </tbody>
+  </table>
+</div>
 
-          <!--tr>
-            <td><img src="img/logo_kth.png" class="logo"></td>
-            <td>01/13<br>06/13</td>
-            <td>
-            <strong>Project leader</strong>, <a target="_blank" href="https://kth.se">Royal Institute of Technology (KTH)</a><br>
-            <i class="fas fa-angle-double-right"></i> We worked as a team of 7 students in developing a demonstration web-application to find classes at the KTH as a semester project.
-            </td>
-            <td>Stockholm, Sweden</td>
+
+
+    
+
+<!-- Skills -->
+<div id="skills" class="row">
+  <h1>Skills</h1>
+    <!--table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Technical</th>
+        <th>Language</th>
+      </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td><strong>Data-science:</strong> R, scikit-learn, Keras, Jupyter, Matlab</td>
+            <td><strong>French:</strong> Mother-tongue</td>
           </tr> 
+      </tbody>
+    </table-->
 
-          <tr>
-            <td><img src="img/logo_best.png" class="logo"></td>
-            <td>03/13<br>06/13</td>
-            <td>
-            <strong>Corporate Relations Responsible</strong>, <a target="_blank" href="https://best.eu.org">Board of European Students of Technology </a><br>
-            <i class="fas fa-angle-double-right"></i> Organised the fund-raising for a ten day intensive engineering course. Established contacts for a successful partnership between the international association and KTH.
-            </td>
-            <td>Stockholm, Sweden</td>
-          </tr--> 
+  <div class="col-lg-6">
+    <h3 style="margin-bottom:5px">Technical</h3>
+    <strong>Web:</strong> Javascript, React.js, Vue.js, OpenAPI, Flask, Node.js, Django, Sass<br>
+    <strong>Deployment:</strong> Docker, Kubernetes<br>
+    <strong>Programming:</strong> Python, Scala, Java, SQL, C/C++<br>
+    <strong>Data-vizualisation:</strong> d3.js, Three.js, matplotlib<br>
+    <strong>Machine learning:</strong> pandas, spacy, scikit-learn, PyTorch, R<br>
+  </div>
 
+  <div class="col-lg-6">
+    <h3 style="margin-bottom:5px">Languages</h3>
+    <strong>French:</strong> Mother-tongue<br>
+    <strong>English:</strong> Professional skills (C1)<br>
+    <strong>German:</strong> Professional skills (C1)<br>
+  </div>
 
-        </tbody>
-      </table>
-    </div>
+  <!--div class="col-lg-6">
+    <ul>
+      <li><strong>Data-science:</strong> R, scikit-learn, Keras, Jupyter, Matlab</li>
+      <li><strong>Programming:</strong> Python, Scala, Java, SQL, C/C++</li>
+      <li><strong>Web-development:</strong> JavaScript, Bootstrap, Sass, HTML5, CSS3</li>
+    </ul>
+  </div>
 
+  <div class="col-lg-6">
+    <ul>
+      <li><strong>French:</strong> Mother-tongue</li>
+      <li><strong>English:</strong> Professional skills (C1)</li>
+      <li><strong>German:</strong> Professional skills (C1)</li>
+    </ul>
+  </div-->
 
-
-    <!-- Education -->
-    <div class="row" >
-      <h1>Education</h1>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Year</th>
-            <th>Degree</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-                <td><img src="img/logo_coursera.svg" class="logo"></td>
-                <td>2017</td>
-                <td>
-                <strong>Neural Networks for Machine Learning</strong>, <a target="_blank" href="https://www.coursera.org">coursera.org </a><br>
-                <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/EQ2NGU6VDVXH">Certificate</a>
-                </td>
-                <td>Lausanne, Switzerland</td>
-              </tr> 
-
-              <tr>
-                <td><img src="img/logo_unil.png" class="logo"></td>
-                <td>2013<br>2016</td>
-                <td>
-                <strong>Master in Economics</strong>, <a target="_blank" href="https://unil.ch">University of Lausanne (UNIL) </a><br>
-                <i class="fas fa-angle-double-right"></i> GPA Master: 5.26/6<br>
-                <i class="fas fa-angle-double-right"></i> Relevant courses: Applied econometrics, Macroeconometrics, Behavorial economics, Dynamic macroeconomic models.
-                </td>
-                <td>Lausanne, Switzerland</td>
-              </tr> 
-
-              <tr>
-                <td><img src="img/logo_epfl_new_transp.png" class="logo"></td>
-                <td>2009<br>2013</td>
-                <td>
-                <strong>Bachelor in Computer Science</strong>, <a target="_blank" href="https://epfl.ch">EPFL</a><br>
-                <i class="fas fa-angle-double-right"></i> Third year exchange at the <a target="_blank" href="https://kth.se">Royal Institute of Technology (KTH)</a> in Stockholm.<br>
-                <i class="fas fa-angle-double-right"></i> Relevant courses: Software Engineering, Artificial intelligence, Time Series Analysis.
-                </td>
-                <td>Lausanne, Switzerland</td>
-              </tr> 
-        </tbody>
-      </table>
-    </div>
+</div>
 
 
+    <!-- %%projects-pdf%% -->
 
-    <!-- Skills -->
-    <div class="row" style="margin-bottom:480px">
-      <h1>Skills</h1>
-        <!--table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Technical</th>
-            <th>Language</th>
-          </tr>
-        </thead>
-        <tbody>
-              <tr>
-                <td><strong>Data-science:</strong> R, scikit-learn, Keras, Jupyter, Matlab</td>
-                <td><strong>French:</strong> Mother-tongue</td>
-              </tr> 
-          </tbody>
-        </table-->
+    
 
-      <div class="col-lg-6">
-        <h3 style="margin-bottom:5px">Technical</h3>
-        <strong>Web:</strong> Javascript, React.js, Vue.js, OpenAPI, Flask, Node.js, Django, Sass<br>
-        <strong>Deployment:</strong> Docker, Kubernetes<br>
-        <strong>Programming:</strong> Python, Scala, Java, SQL, C/C++<br>
-        <strong>Data-vizualisation:</strong> d3.js, Three.js, matplotlib<br>
-        <strong>Machine learning:</strong> pandas, spacy, scikit-learn, PyTorch, R<br>
-      </div>
-
-      <div class="col-lg-6">
-        <h3 style="margin-bottom:5px">Languages</h3>
-        <strong>French:</strong> Mother-tongue<br>
-        <strong>English:</strong> Professional skills (C1)<br>
-        <strong>German:</strong> Professional skills (C1)<br>
-      </div>
-
-      <!--div class="col-lg-6">
-        <ul>
-          <li><strong>Data-science:</strong> R, scikit-learn, Keras, Jupyter, Matlab</li>
-          <li><strong>Programming:</strong> Python, Scala, Java, SQL, C/C++</li>
-          <li><strong>Web-development:</strong> JavaScript, Bootstrap, Sass, HTML5, CSS3</li>
-        </ul>
-      </div>
-
-      <div class="col-lg-6">
-        <ul>
-          <li><strong>French:</strong> Mother-tongue</li>
-          <li><strong>English:</strong> Professional skills (C1)</li>
-          <li><strong>German:</strong> Professional skills (C1)</li>
-        </ul>
-      </div-->
-
-    </div>
+<!-- Publications -->
+<div id="publications" class="row">
+  <h1>Publications</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Year</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
 
 
-    <div class="row">
+      <a href="https://infoscience.epfl.ch/record/304705" target="_blank"></a>.
+      <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
+    
+      <tr>
+        <td width="70px"></td>
+        <td>2023</td>
+        <td>
+        <a target="_blank" href="https://infoscience.epfl.ch/record/304705">
+          <strong>From Automated Bootstrapping to Collaborative Editing: A Framework for 4D City Reconstruction</strong></a>,
+        <a target="_blank" href="https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show">
+            Digital Humanities 2023 Conference
+        </a><br>
+        <i class="fas fa-angle-double-right"></i> In this paper, we present a pipeline and platform to bootstrap 3d historical model of cities and continuously improve them in a versioned and documented manner.
+      </td>
+      </tr> 
 
-      <h1>Projects</h1>
+      <tr>
+        <td width="70px"></td>
+        <td>2022</td>
+        <td>
+        <a target="_blank" href="https://ieeexplore.ieee.org/document/9797355"><strong>KGP Meter: Communicating Kin Genomic Privacy to the Masses</strong>, 2022 IEEE 7th European Symposium on Security and Privacy (EuroS&P) </a><br>
+        <i class="fas fa-angle-double-right"></i> Direct-to-consumer genetic testing services such as 23andMe or AncestryDNA have already attracted 26 million customers.
+        These services raise privacy concerns, as some people share their genomic data publicly on platforms such as GEDmatch. 
+        Notably, sensitive information on health outcomes can be deduced not only on the tested person, but also on their close relatives.
+        In this paper, we present KGP Meter, a new online tool that provides means for raising awareness in the general public about the privacy risks of genomic data sharing.
+        </td>
+      </tr> 
 
-
-      <!-- HistoricalCityJSON-ninja  -->
-      <div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            Historical CityJSON editor
-          </div>
-          <div class="panel-body">
-            <p>
-              In this project, we created a pipeline to create a documented 3d model from historical data.
-              I developed a web-interface to interact and edit the 3d model.
-              It allows to changes attributes (e.g. roof slope) and relaunch the procedural modelling of the city.
-              Presented at the <a href="https://infoscience.epfl.ch/record/304705" target="_blank">Digital Humanities 2023 conference</a>.
-              <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
-            </p>
-            <img src="./img/hcj.png" width="100%">
-          </div>
-        </div>
-      </div>
-
-
-      <!-- linked HDS  -->
-      <div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-              <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/">
-              The linked HDS
-              </a>
-          </div>
-          <div class="panel-body">
-            <p>
-              The <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland (HDS)</a> is a fascinating source on Swiss history.
-              Started in the 1980s as a paper-based encyclopedia, it was made without hyperlinks.<!--, which are today an expectation of our browsing experience.-->
-              With this project, I scraped the HDS's 36'000 articles, used a Natural Language Processing (NLP) model to recognize entities in the text and add hyperlinks to their corresponding HDS and Wikipedia articles.
-              <!--Finally I brought it back online as a standalone website,--> The linked HDS now offers a much more modern and intuitive exploration experience.
-            </p>
-            <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/#/">
-              <img src="./img/linked_hds.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div>
+      <tr>
+        <td width="70px"></td>
+        <td>2018</td>
+        <td>
+        <a target="_blank" href="https://sjes.springeropen.com/articles/10.1186/s41937-017-0012-9"><strong>Inheritance Flows in Switzerland, 1911-2011</strong>, Swiss Journal of Economics and Statistics </a><br>
+        <i class="fas fa-angle-double-right"></i> We estimate the annual inheritance flows and shares of inherited wealth in Switzerland over a long span of historical data, in close analogy to the study for France done by <a target="_blank" href="https://academic.oup.com/qje/article-abstract/126/3/1071/1853329">Thomas Piketty (QJE 2011)</a>. Coauthor with Élodie Moreau and <a target="_blank" href="http://www.hec.unil.ch/mbrulhar/">Pr. Marius Brülhart</a>.
+        </td>
+      </tr> 
 
 
-      <!-- 1808 Venice cadaster  -->
-      <div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-              Historical Venetian Cadaster Explorer
-          </div>
-          <div class="panel-body">
-            <p>
-              With the parcels of Venice project, the DHLAB is digitizing historical cadastral data for Venice: maps of parcels with their accompanying metadata (owners, rent, etc)
-              As part of the Parcels of Venice project, I developed a platform to explore spatio-temporal cadastral registries.
-              It allows to view parcels, their owner and metadata. Moreover, I supervised a student to perform named entity recognition
-              on the 23'000 entries and disambiguate unique persons and link them to the parcels they own.
-            </p>
-            <img src="./img/venice1808.png" width="100%">
-          </div>
-        </div>
-      </div>
+    </tbody>
+  </table>
 
+</div>
 
-      <!-- Swiss population through time  -->
-      <div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="panel-heading-part1">
-              <a target="_blank" href="./swiss-population-time-machine/">
-              Population of Swiss municipalities over time
-              </a>
-            </div>
-            <div class="panel-heading-part2">
-              <a target="_blank" href="https://github.com/dddpt/swiss-population-time-machine"> <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="panel-body">
-            <p>
-              For this vizualisation, I extracted population data from texts of municipalities pages of the
-              <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland</a>.
-              Building upon the available data, I created a simple model to extrapolate the population of all municipalities until 1200.
-            </p>
-            <a target="_blank" href="./swiss-population-time-machine/">
-              <img src="./img/swiss_pop_through_time.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- ScanVan  -->
-      <div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-              <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
-              ScanVan Project: explore cities in 3D
-              <!--/a-->
-          </div>
-          <div class="panel-body">
-            <p>
-              The ScanVan project at EPFL is exploring new ways to create digital 3D models of cities using innovative cameras and algorithms.
-              I developed a website to explore those 3D reconstructions, beginning with our first scan: the city of Sion.
-              <!--br/>Tech used: React, Node.js, Three.js, Potree, Leaflet-->
-            </p>
-            <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
-              <img src="./img/scanvan.png" width="100%">
-            <!--/a-->
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Kin Genomic Privacy -->
-      <div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
-              Kin Genomic Privacy Estimator
-            </a>
-          </div>
-          <div class="panel-body">
-            <p>
-              For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. 
-              At the Information Security and Privacy Lab, I developed a website that allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
-              <!--br/>Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
-              <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
-              Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
-              <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to indicate which of your relatives had their genome tested, and estimates how much of your genomic information remains hidden.-->
-              <!--At the ISPLAB, I developed a website to raise awareness about the privacy risks of genomic data
-              sharing when using services such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. The website enables
-              users to draw their family trees and indicate which of their relatives’ genomes are known, and gives a corresponding genomic privacy score.-->
-            </p>
-            <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
-              <img src="./img/kgpmeter.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- JS Solar System  -->
-      <div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="panel-heading-part1">
-              <a target="_blank" href="./solar-system/">
-                3D Solar System
-              </a>
-            </div>
-            <div class="panel-heading-part2">
-              <a target="_blank" href="https://github.com/dddpt/solar-system">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="panel-body">
-            <p>
-              To get familiar with orbital mechanics, our solar system and <a target="_blank" href="https://threejs.org/">Three.js</a>, I am
-              having fun on this simple solar system animation. For now it uses descriptive Keplerian Orbits. It will soon be extended with proper Newtonian Mechanics, planets' moons data and nicer sprites (WIP).
-            </p>
-            <p>
-            </p>
-            <a target="_blank" href="./solar-system/">
-              <img src="./img/solar_system.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- personal nutrition data-viz -->
-      <!--div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="panel-heading-part1">
-              <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
-                Personal Nutrition Data-viz Dashboard
-              </a>
-            </div>
-            <div class="panel-heading-part2">
-              <a target="_blank" href="https://github.com/dddpt/daily-intakes-nutrition-dataviz-demo">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="panel-body">
-            <p>
-              This proof-of-concept personal nutrition data-vizualisation is a demo built for a nutrition
-              research project where participants collect data on their food consumption. 
-              The interactive visualization allows participants to compare their nutrient intakes across food
-              classes with the rest of the population.
-            </p>
-            <p>
-            </p>
-            <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
-              <img src="./img/personal_nutrition_demo.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div-->
-
-
-      <!-- Travail de Master: inheritance inequality -->
-      <!--div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
-              Inheritance distribution in Switzerland
-            </a>
-          </div>
-          <div class="panel-body">
-            <p>
-              For my Master thesis, I used long-run wealth distribution and mortality data to reconstruct the distribution of bequest from 1934 to 2013 in a selection of Swiss cantons. The resulting time series shows that the distribution of bequests is less unequal that it was 80 years ago thanks to the rise of the upper middle class. Supervised by Pr. <a target="_blank" href="http://www.hec.unil.ch/mbrulhar/">Marius Brülhart</a>. <br>
-              <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">[pdf report]</a>
-            </p>
-            <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
-              <img src="img/master_thesis_inh_evolution.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div-->
-
-
-      <!-- SNA Politicians and boardrooms in Madagascar-->
-      <!--div class="col-6 col-xs-6 col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
-              Politicians and boardrooms in Madagascar
-            </a>
-          </div>
-          <div class="panel-body">
-            <p>
-              I scraped the whole Malagasy business registry to study the networks of boards and directors in important Malagasy companies using social network analysis. We find a high presence of political figures and state officials in boardrooms. Notably, Madagascar’s sitting president is among the three most central nodes of the directors network. Supervised by Pr. <a target="_blank" href="http://hec.unil.ch/people/mtomassini?dyn_lang=fr">Marco Tomassini</a>. 
-              <br><a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">[pdf report]</a>
-            </p>
-            <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
-              <img src="img/sna_madagascar2.png" width="100%">
-            </a>
-          </div>
-        </div>
-      </div-->
-
-    </div>
-
-
-
-
-    <!-- Publications -->
-    <div class="row">
-      <h1>Publications</h1>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Year</th>
-            <th>Title</th>
-          </tr>
-        </thead>
-        <tbody>
-
-
-          <a href="https://infoscience.epfl.ch/record/304705" target="_blank"></a>.
-          <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
-        
-          <tr>
-            <td width="70px"></td>
-            <td>2023</td>
-            <td>
-            <a target="_blank" href="https://infoscience.epfl.ch/record/304705">
-              <strong>From Automated Bootstrapping to Collaborative Editing: A Framework for 4D City Reconstruction</strong></a>,
-            <a target="_blank" href="https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show">
-                Digital Humanities 2023 Conference
-            </a><br>
-            <i class="fas fa-angle-double-right"></i> In this paper, we present a pipeline and platform to bootstrap 3d historical model of cities and continuously improve them in a versioned and documented manner.
-          </td>
-          </tr> 
-
-          <tr>
-            <td width="70px"></td>
-            <td>2022</td>
-            <td>
-            <a target="_blank" href="https://ieeexplore.ieee.org/document/9797355"><strong>KGP Meter: Communicating Kin Genomic Privacy to the Masses</strong>, 2022 IEEE 7th European Symposium on Security and Privacy (EuroS&P) </a><br>
-            <i class="fas fa-angle-double-right"></i> Direct-to-consumer genetic testing services such as 23andMe or AncestryDNA have already attracted 26 million customers.
-            These services raise privacy concerns, as some people share their genomic data publicly on platforms such as GEDmatch. 
-            Notably, sensitive information on health outcomes can be deduced not only on the tested person, but also on their close relatives.
-            In this paper, we present KGP Meter, a new online tool that provides means for raising awareness in the general public about the privacy risks of genomic data sharing.
-            </td>
-          </tr> 
-
-          <tr>
-            <td width="70px"></td>
-            <td>2018</td>
-            <td>
-            <a target="_blank" href="https://sjes.springeropen.com/articles/10.1186/s41937-017-0012-9"><strong>Inheritance Flows in Switzerland, 1911-2011</strong>, Swiss Journal of Economics and Statistics </a><br>
-            <i class="fas fa-angle-double-right"></i> We estimate the annual inheritance flows and shares of inherited wealth in Switzerland over a long span of historical data, in close analogy to the study for France done by <a target="_blank" href="https://academic.oup.com/qje/article-abstract/126/3/1071/1853329">Thomas Piketty (QJE 2011)</a>. Coauthor with Élodie Moreau and <a target="_blank" href="http://www.hec.unil.ch/mbrulhar/">Pr. Marius Brülhart</a>.
-            </td>
-          </tr> 
-
-
-        </tbody>
-      </table>
-
-    </div>
 
     <!-- PDF: put projects here-->
 
