@@ -33,7 +33,12 @@ for p in parts:
 
 # css
 index_html_content = index_html_content.replace("<!-- %%custom-css%% -->", f'<link href="css/{mode}.css" rel="stylesheet">')
-  
+
+# replace footer for web
+if mode=="web":  
+    footer_content = '<p><img src="img/cc.svg" style="width:1rem"> Didier Dupertuis, 2020. Powered by Bootstrap.</p>'
+    index_html_content = index_html_content.replace("<!-- %%footer%% -->", footer_content)
+
 # write output
 with open("index.html",mode='w') as f:
     f.write(index_html_content)
