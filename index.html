@@ -23,7 +23,7 @@
   <!-- Font-awesomize all this -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-  <link href="css/pdf.css" rel="stylesheet">
+  <link href="css/web.css" rel="stylesheet">
 
   <style>
   .logo{
@@ -62,7 +62,7 @@
       <div class="col-9 col-xs-9 col-sm-9">
         <div class="alert alert" role="alert">
           <h3>Didier Dupertuis</h3>
-          Full-stack developer passionate about web technologies, GIS, machine learning, history and space exploration.
+          Full-stack developer passionate about web technologies, GIS, machine learning and history.
           Looking for new opportunities as a DevOps/full-stack specialist.
         </div>
         <!--div class="alert alert" role="alert" style="margin-bottom:0px;">
@@ -73,7 +73,263 @@
     </div>
 
 
-    <!-- %%projects-web%% -->
+    
+
+<div id="projects" class="row">
+
+  <h1>Projects</h1>
+
+
+  <!-- HistoricalCityJSON-ninja  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Historical CityJSON editor
+      </div>
+      <div class="panel-body">
+        <p>
+          In this project, we created a pipeline to create a documented 3d model from historical data.
+          I developed a web-interface to interact and edit the 3d model.
+          It allows to changes attributes (e.g. roof slope, height, etc) and relaunch the procedural modelling of the city.
+          Presented at the <a href="https://infoscience.epfl.ch/record/304705" target="_blank">Digital Humanities 2023 conference</a>.
+          <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
+        </p>
+        <img src="./img/hcj.png" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- linked HDS  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/">
+          The linked HDS
+          </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          The <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland (HDS)</a> is a fascinating source on Swiss history.
+          Started in the 1980s as a paper-based encyclopedia, it was made without hyperlinks.<!--, which are today an expectation of our browsing experience.-->
+          With this project, I used a Natural Language Processing (NLP) model to recognize entities in the text and add hyperlinks to the 36'000 HDS articles.
+          <!--Finally I brought it back online as a standalone website,--> The linked HDS now offers a much more modern and intuitive exploration experience.
+        </p>
+        <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/#/">
+          <img src="./img/linked_hds.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 1808 Venice cadaster  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          Historical Venetian Cadaster Explorer
+      </div>
+      <div class="panel-body">
+        <p>
+          With the parcels of Venice project, the DHLAB is digitizing historical cadastral data for Venice: maps of parcels with their accompanying metadata (owners, rent, etc)
+          As part of the Parcels of Venice project, I developed a platform to explore spatio-temporal cadastral registries.
+          It allows to view parcels, their owner and metadata. Moreover, I supervised a student to perform named entity recognition
+          on the 23'000 entries and disambiguate unique persons and link them to the parcels they own.
+        </p>
+        <img src="./img/venice1808.png" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Swiss population through time  -->
+  <div id="swiss-population-time" class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-part1">
+          <a target="_blank" href="./swiss-population-time-machine/">
+          Population of Swiss municipalities over time
+          </a>
+        </div>
+        <div class="panel-heading-part2">
+          <a target="_blank" href="https://github.com/dddpt/swiss-population-time-machine"> <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>
+          For this vizualisation, I extracted population data from texts of municipalities pages of the
+          <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland</a>.
+          Building upon the available data, I created a simple model to extrapolate the population of all municipalities until 1200.
+        </p>
+        <a target="_blank" href="./swiss-population-time-machine/">
+          <img src="./img/swiss_pop_through_time.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ScanVan  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
+          ScanVan Project: explore cities in 3D
+          <!--/a-->
+      </div>
+      <div class="panel-body">
+        <p>
+          The ScanVan project at EPFL is exploring new ways to create digital 3D models of cities using innovative cameras and algorithms.
+          I developed a website to explore those 3D reconstructions, beginning with our first scan: the city of Sion.
+          <!--br/>Tech used: React, Node.js, Three.js, Potree, Leaflet-->
+        </p>
+        <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
+          <img src="./img/scanvan.png" width="100%">
+        <!--/a-->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Kin Genomic Privacy -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
+          Kin Genomic Privacy Estimator
+        </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. 
+          At the Information Security and Privacy Lab, I developed a website that allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
+          <!--br/>Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
+          <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
+          Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
+          <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to indicate which of your relatives had their genome tested, and estimates how much of your genomic information remains hidden.-->
+          <!--At the ISPLAB, I developed a website to raise awareness about the privacy risks of genomic data
+          sharing when using services such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. The website enables
+          users to draw their family trees and indicate which of their relatives’ genomes are known, and gives a corresponding genomic privacy score.-->
+        </p>
+        <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
+          <img src="./img/kgpmeter.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- JS Solar System  -->
+  <div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-part1">
+          <a target="_blank" href="./solar-system/">
+            3D Solar System
+          </a>
+        </div>
+        <div class="panel-heading-part2">
+          <a target="_blank" href="https://github.com/dddpt/solar-system">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>
+          To get familiar with orbital mechanics, our solar system and <a target="_blank" href="https://threejs.org/">Three.js</a>, I am
+          having fun on this simple solar system animation. For now it uses descriptive Keplerian Orbits. It will soon be extended with proper Newtonian Mechanics, planets' moons data and nicer sprites (WIP).
+        </p>
+        <p>
+        </p>
+        <a target="_blank" href="./solar-system/">
+          <img src="./img/solar_system.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- personal nutrition data-viz -->
+  <!--div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-part1">
+          <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
+            Personal Nutrition Data-viz Dashboard
+          </a>
+        </div>
+        <div class="panel-heading-part2">
+          <a target="_blank" href="https://github.com/dddpt/daily-intakes-nutrition-dataviz-demo">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>
+          This proof-of-concept personal nutrition data-vizualisation is a demo built for a nutrition
+          research project where participants collect data on their food consumption. 
+          The interactive visualization allows participants to compare their nutrient intakes across food
+          classes with the rest of the population.
+        </p>
+        <p>
+        </p>
+        <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
+          <img src="./img/personal_nutrition_demo.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div-->
+
+
+  <!-- Travail de Master: inheritance inequality -->
+  <!--div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
+          Inheritance distribution in Switzerland
+        </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          For my Master thesis, I used long-run wealth distribution and mortality data to reconstruct the distribution of bequest from 1934 to 2013 in a selection of Swiss cantons. The resulting time series shows that the distribution of bequests is less unequal that it was 80 years ago thanks to the rise of the upper middle class. Supervised by Pr. <a target="_blank" href="http://www.hec.unil.ch/mbrulhar/">Marius Brülhart</a>. <br>
+          <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">[pdf report]</a>
+        </p>
+        <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
+          <img src="img/master_thesis_inh_evolution.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div-->
+
+
+  <!-- SNA Politicians and boardrooms in Madagascar-->
+  <!--div class="col-6 col-xs-6 col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
+          Politicians and boardrooms in Madagascar
+        </a>
+      </div>
+      <div class="panel-body">
+        <p>
+          I scraped the whole Malagasy business registry to study the networks of boards and directors in important Malagasy companies using social network analysis. We find a high presence of political figures and state officials in boardrooms. Notably, Madagascar’s sitting president is among the three most central nodes of the directors network. Supervised by Pr. <a target="_blank" href="http://hec.unil.ch/people/mtomassini?dyn_lang=fr">Marco Tomassini</a>. 
+          <br><a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">[pdf report]</a>
+        </p>
+        <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
+          <img src="img/sna_madagascar2.png" width="100%">
+        </a>
+      </div>
+    </div>
+  </div-->
+
+</div>
+
+
 
     
 
@@ -366,269 +622,13 @@
 </div>
 
 
-    
-
-<div id="projects" class="row">
-
-  <h1>Projects</h1>
-
-
-  <!-- HistoricalCityJSON-ninja  -->
-  <div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        Historical CityJSON editor
-      </div>
-      <div class="panel-body">
-        <p>
-          In this project, we created a pipeline to create a documented 3d model from historical data.
-          I developed a web-interface to interact and edit the 3d model.
-          It allows to changes attributes (e.g. roof slope, height, etc) and relaunch the procedural modelling of the city.
-          Presented at the <a href="https://infoscience.epfl.ch/record/304705" target="_blank">Digital Humanities 2023 conference</a>.
-          <!-- dh2023 link: https://www.conftool.pro/dh2023/index.php?page=browseSessions&form_session=96&presentations=show -->
-        </p>
-        <img src="./img/hcj.png" width="100%">
-      </div>
-    </div>
-  </div>
-
-
-  <!-- linked HDS  -->
-  <div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-          <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/">
-          The linked HDS
-          </a>
-      </div>
-      <div class="panel-body">
-        <p>
-          The <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland (HDS)</a> is a fascinating source on Swiss history.
-          Started in the 1980s as a paper-based encyclopedia, it was made without hyperlinks.<!--, which are today an expectation of our browsing experience.-->
-          With this project, I used a Natural Language Processing (NLP) model to recognize entities in the text and add hyperlinks to the 36'000 HDS articles.
-          <!--Finally I brought it back online as a standalone website,--> The linked HDS now offers a much more modern and intuitive exploration experience.
-        </p>
-        <a target="_blank" href="https://dddpt-epfl-phd.github.io/dhs-nerd/#/">
-          <img src="./img/linked_hds.png" width="100%">
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- 1808 Venice cadaster  -->
-  <div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-          Historical Venetian Cadaster Explorer
-      </div>
-      <div class="panel-body">
-        <p>
-          With the parcels of Venice project, the DHLAB is digitizing historical cadastral data for Venice: maps of parcels with their accompanying metadata (owners, rent, etc)
-          As part of the Parcels of Venice project, I developed a platform to explore spatio-temporal cadastral registries.
-          It allows to view parcels, their owner and metadata. Moreover, I supervised a student to perform named entity recognition
-          on the 23'000 entries and disambiguate unique persons and link them to the parcels they own.
-        </p>
-        <img src="./img/venice1808.png" width="100%">
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Swiss population through time  -->
-  <div id="swiss-population-time" class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="panel-heading-part1">
-          <a target="_blank" href="./swiss-population-time-machine/">
-          Population of Swiss municipalities over time
-          </a>
-        </div>
-        <div class="panel-heading-part2">
-          <a target="_blank" href="https://github.com/dddpt/swiss-population-time-machine"> <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <div class="panel-body">
-        <p>
-          For this vizualisation, I extracted population data from texts of municipalities pages of the
-          <a href="https://hls-dhs-dss.ch/fr/articles/002440/2014-08-07/" target="_blank">Historical Dictionary of Switzerland</a>.
-          Building upon the available data, I created a simple model to extrapolate the population of all municipalities until 1200.
-        </p>
-        <a target="_blank" href="./swiss-population-time-machine/">
-          <img src="./img/swiss_pop_through_time.png" width="100%">
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- ScanVan  -->
-  <div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-          <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
-          ScanVan Project: explore cities in 3D
-          <!--/a-->
-      </div>
-      <div class="panel-body">
-        <p>
-          The ScanVan project at EPFL is exploring new ways to create digital 3D models of cities using innovative cameras and algorithms.
-          I developed a website to explore those 3D reconstructions, beginning with our first scan: the city of Sion.
-          <!--br/>Tech used: React, Node.js, Three.js, Potree, Leaflet-->
-        </p>
-        <!--a target="_blank" href="https://scanvan.dhlab.epfl.ch/"-->
-          <img src="./img/scanvan.png" width="100%">
-        <!--/a-->
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- Kin Genomic Privacy -->
-  <div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
-          Kin Genomic Privacy Estimator
-        </a>
-      </div>
-      <div class="panel-body">
-        <p>
-          For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. 
-          At the Information Security and Privacy Lab, I developed a website that allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
-          <!--br/>Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
-          <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to estimate how much of your genomic information remains hidden when member(s) of your family had their genome tested.
-          Tech used: d3.js, Flask, Jupyter, pandas, scikit-learn-->
-          <!--At the Information Security and privacy Lab, I developed a website to raise awareness about the privacy risks of genetic testing. For 100$, anyone can get his genome tested by companies such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. Our website allows to indicate which of your relatives had their genome tested, and estimates how much of your genomic information remains hidden.-->
-          <!--At the ISPLAB, I developed a website to raise awareness about the privacy risks of genomic data
-          sharing when using services such as <a target="_blank" href="https://www.23andme.com/">23andMe</a>. The website enables
-          users to draw their family trees and indicate which of their relatives’ genomes are known, and gives a corresponding genomic privacy score.-->
-        </p>
-        <a target="_blank" href="https://santeperso.unil.ch/kgp-survey/?ggg">
-          <img src="./img/kgpmeter.png" width="100%">
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- JS Solar System  -->
-  <div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="panel-heading-part1">
-          <a target="_blank" href="./solar-system/">
-            3D Solar System
-          </a>
-        </div>
-        <div class="panel-heading-part2">
-          <a target="_blank" href="https://github.com/dddpt/solar-system">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <div class="panel-body">
-        <p>
-          To get familiar with orbital mechanics, our solar system and <a target="_blank" href="https://threejs.org/">Three.js</a>, I am
-          having fun on this simple solar system animation. For now it uses descriptive Keplerian Orbits. It will soon be extended with proper Newtonian Mechanics, planets' moons data and nicer sprites (WIP).
-        </p>
-        <p>
-        </p>
-        <a target="_blank" href="./solar-system/">
-          <img src="./img/solar_system.png" width="100%">
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <!-- personal nutrition data-viz -->
-  <!--div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="panel-heading-part1">
-          <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
-            Personal Nutrition Data-viz Dashboard
-          </a>
-        </div>
-        <div class="panel-heading-part2">
-          <a target="_blank" href="https://github.com/dddpt/daily-intakes-nutrition-dataviz-demo">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <div class="panel-body">
-        <p>
-          This proof-of-concept personal nutrition data-vizualisation is a demo built for a nutrition
-          research project where participants collect data on their food consumption. 
-          The interactive visualization allows participants to compare their nutrient intakes across food
-          classes with the rest of the population.
-        </p>
-        <p>
-        </p>
-        <a target="_blank" href="./daily-intakes-nutrition-dataviz-demo">
-          <img src="./img/personal_nutrition_demo.png" width="100%">
-        </a>
-      </div>
-    </div>
-  </div-->
-
-
-  <!-- Travail de Master: inheritance inequality -->
-  <!--div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
-          Inheritance distribution in Switzerland
-        </a>
-      </div>
-      <div class="panel-body">
-        <p>
-          For my Master thesis, I used long-run wealth distribution and mortality data to reconstruct the distribution of bequest from 1934 to 2013 in a selection of Swiss cantons. The resulting time series shows that the distribution of bequests is less unequal that it was 80 years ago thanks to the rise of the upper middle class. Supervised by Pr. <a target="_blank" href="http://www.hec.unil.ch/mbrulhar/">Marius Brülhart</a>. <br>
-          <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">[pdf report]</a>
-        </p>
-        <a target="_blank" href="./img/Travail de Master - Didier Dupertuis 2016.pdf">
-          <img src="img/master_thesis_inh_evolution.png" width="100%">
-        </a>
-      </div>
-    </div>
-  </div-->
-
-
-  <!-- SNA Politicians and boardrooms in Madagascar-->
-  <!--div class="col-6 col-xs-6 col-sm-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
-          Politicians and boardrooms in Madagascar
-        </a>
-      </div>
-      <div class="panel-body">
-        <p>
-          I scraped the whole Malagasy business registry to study the networks of boards and directors in important Malagasy companies using social network analysis. We find a high presence of political figures and state officials in boardrooms. Notably, Madagascar’s sitting president is among the three most central nodes of the directors network. Supervised by Pr. <a target="_blank" href="http://hec.unil.ch/people/mtomassini?dyn_lang=fr">Marco Tomassini</a>. 
-          <br><a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">[pdf report]</a>
-        </p>
-        <a target="_blank" href="./img/Politicians and boardrooms in Madagascar.pdf">
-          <img src="img/sna_madagascar2.png" width="100%">
-        </a>
-      </div>
-    </div>
-  </div-->
-
-</div>
-
-
+    <!-- %%projects-pdf%% -->
 
     <!-- PDF: put projects here-->
 
 
     <footer class="footer">
-      <!-- %%footer%% -->
+      <p><img src="img/cc.svg" style="width:1rem"> Didier Dupertuis, 2020. Powered by Bootstrap.</p>
     </footer>
   </div><!-- /container -->
 
